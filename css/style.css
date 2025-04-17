@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+}
+
+header {
+    background-color: rgb(67, 31, 226);
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px #020045;
+}
+
+header ul{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    text-align: 26px;
+}
+header ul span{
+    color: #551919;
+    font-style: italic;
+}
+.verde{
+    color: rgb(0, 255, 0) ;
+}
+
+nav {
+    background-color: rgb(25, 214, 0);
+    float: left;
+    width: 23%;
+    border-radius: 10px;
+}
+
+nav ul li{
+    list-style-type:  none;
+    border-bottom: 2px solid rgb(0, 148, 0);
+    width: 90%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    line-height: 50px;
+    padding-bottom: 10px;
+}
+
+/*visitado*/
+nav ul li a:visited{
+    color: rgb(0, 87, 10);
+}
+
+nav ul li a:hover{
+    color: rgb(0, 126, 8);
+    text-decoration: underline;
+}
+
+main {
+    background-color: rgb(254, 0, 0);
+    float: left;
+    width: 57%;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+main p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 26px;
+}
+
+aside {
+    background-color: rgb(255, 247, 0);
+    float: left;
+    width: 20%;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 5px 5px 8px #424700;
+    /* 1° valor é pros lados, 2° valor é para cima ou para baixo, 3° desfoque */
+}
+aside p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 26px;
+}
+footer {
+    background-color: rgb(85, 0, 134);
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+footer p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 26px;
+    text-align: center;
+    line-height: 50px;
+}
+footer p a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+
+}
+
+footer p a:hover{
+    color: rgb(155, 0, 167);
+    text-decoration: underline;
+}
+
+
+/* responsividade = ajustar a largura da tela */
+     /*para tablets:*/
+@media only screen and (max-width:800px) {
+
+    aside{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    nav{
+        width: 30%;
+    }
+    main{
+        width: 70%;
+    }
+    footer{
+        height: auto;
+    }
+
+    /* para celular: */
+    @media only screen and (max-width:600px) {
+
+        nav,main,aside{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        footer{
+            height: auto; 
+        }
+    }
+
+}
